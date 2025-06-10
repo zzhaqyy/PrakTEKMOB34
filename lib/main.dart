@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 }
 
 class ECommerceScreen extends StatelessWidget {
-  const ECommerceScreen({Key? key}) : super(key: key);
+  const ECommerceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -156,25 +156,25 @@ class ECommerceScreen extends StatelessWidget {
             // Kategori
             Container(
               margin: const EdgeInsets.all(16.0),
-              child: Row(
+              child: const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.shopping_bag, color: Colors.blue),
                       SizedBox(height: 8.0),
                       Text('Pakaian'),
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.watch, color: Colors.blue),
                       SizedBox(height: 8.0),
                       Text('Aksesoris')
                     ],
                   ),
                   Column(
-                    children: const <Widget>[
+                    children: <Widget>[
                       Icon(Icons.devices, color: Colors.blue),
                       SizedBox(height: 8.0),
                       Text('Elektronik'),
